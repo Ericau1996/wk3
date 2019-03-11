@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- Input with placeholder -->
+<ion-item>
+  <input type="text" [(ngModel)]="contactName" name="contactName">
+</ion-item>
+<ion-checkbox color="dark"></ion-checkbox>Remain logged in
+<p></p>
+<ion-button (click)="login()">Login</ion-button>
+<ion-button routerLink="/account/{{contactName}}">Login2</ion-button>
+<p></p>
+{{clickCounter}} log in attempts
+</ion-content>
